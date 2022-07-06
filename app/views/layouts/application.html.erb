@@ -10,9 +10,7 @@
   </head>
   <body class="d-flex flex-column">
     <%= render 'layouts/navigation' %>
-    <% flash.each do |name, msg| %>
-      <%= msg %>
-    <% end %>
+    <%= render 'layouts/messages' %>
     <%= yield %>
   </body>
 </html>
